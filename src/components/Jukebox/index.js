@@ -7,24 +7,24 @@ class Jukebox extends Component {
     songs: [
       {
         name: "Fantasy Classical",
-        url: "/songs/fantasy-classical.mp3",
+        url: "https://lalu-app.oss-cn-shenzhen.aliyuncs.com/test/fantasy-classical.mp3",
       },
       {
         name: "Gates of Heaven",
-        url: "/songs/gates-of-heaven.mp3",
+        url: "https://lalu-app.oss-cn-shenzhen.aliyuncs.com/test/gates-of-heaven.mp3",
       },
       {
         name: "Grand Orchestra",
-        url: "/songs/grand-orchestra.mp3",
+        url: "https://lalu-app.oss-cn-shenzhen.aliyuncs.com/test/grand-orchestra.mp3",
       },
       {
         name: "Piano Song",
-        url: "/songs/piano-song.mp3",
+        url: "https://lalu-app.oss-cn-shenzhen.aliyuncs.com/test/piano-song.mp3",
       },
     ],
     isPlaying: false,
   };
-
+  componentDidMount() {}
   chooseSong = (song) => {
     this.setState({ song: song });
   };
