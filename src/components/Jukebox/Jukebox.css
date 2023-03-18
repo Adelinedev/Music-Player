@@ -1,0 +1,112 @@
+.jukebox-container {
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 1.5vw;
+  box-sizing: border-box;
+
+  border-radius: 50% 50% 45% 55% / 48% 48% 52% 52%;
+
+  background: rgb(204, 229, 234);
+  background: linear-gradient(
+    139deg,
+    rgba(204, 229, 234, 1) 13%,
+    rgba(240, 250, 200, 1) 91%
+  );
+  box-shadow: 0 10px 20px rgba(241, 240, 194, 0.964),
+    0 6px 6px rgba(246, 246, 245, 0.807);
+}
+
+@media screen and (min-width: 768px) {
+  .jukebox-container {
+    width: 50vw;
+  }
+}
+.song-selection select,
+.disable-songs {
+  outline: none;
+  margin-top: -10px;
+  padding: 3px;
+  font-size: 16px;
+  color: #656363;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background: linear-gradient(
+    298deg,
+    rgb(202, 242, 239) 2%,
+    rgba(255, 255, 255, 1) 55%,
+    rgb(232, 251, 244) 83%
+  );
+}
+.disable-songs {
+  border: none;
+  background: none;
+  margin-left: 10px;
+}
+.song-selection {
+  display: flex;
+  align-items: center;
+}
+html {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(236, 255, 252);
+  background: linear-gradient(
+    119deg,
+    rgba(236, 255, 252, 1) 12%,
+    rgba(254, 255, 187, 1) 91%
+  );
+}
+h1,
+.subtitle {
+  font-family: "Pacifico", cursive;
+
+  background: rgb(94, 207, 230);
+  background: rgb(20, 145, 170);
+  background: rgb(20, 145, 170);
+  background: rgb(225, 255, 162);
+  background: rgb(123, 172, 77);
+  background: radial-gradient(
+    circle,
+    rgba(123, 172, 77, 1) 0%,
+    rgba(80, 184, 188, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  transform: perspective(500px) rotateY(10deg) translateX(5px) scale(1.2);
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-left: -4vw;
+}
+
+.animated {
+  animation-name: move;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-30px);
+  }
+  25% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
