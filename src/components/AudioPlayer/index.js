@@ -102,7 +102,7 @@ class AudioPlayer extends Component {
         <p className="audio-info">
           {this.state.status === "ended"
             ? "Music Finished"
-            : `Playing ${audioURL}`}
+            : `Playing ${audioURL.substring(audioURL.indexOf("/test/"))}`}
         </p>
         <p className="audio-progress">
           {`Progress: ${currentTime.toFixed(1)} / ${duration.toFixed(

@@ -35,7 +35,7 @@
 
 .audio-progress {
   color: rgb(87, 115, 144);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 14px;
 }
 
@@ -45,6 +45,7 @@
   justify-content: center;
   gap: 10px;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .control-btn {
